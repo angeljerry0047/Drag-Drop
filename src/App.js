@@ -14,7 +14,6 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from 'redux';
 import reducers from "./reducers";
 import thunk from "redux-thunk";
-// import { createMiddleware } from "./middleware";
 import './App.css';
 const store = createStore(
   reducers,
@@ -29,13 +28,6 @@ class App extends Component {
           {/*<Router basename={process.env.PUBLIC_URL}>*/}
           <Router>
             <Switch>
-              {/*<Route exact path={`${process.env.PUBLIC_URL}`} component={Home} />*/}
-              {/*<Route path={`${process.env.PUBLIC_URL}/Pages/Dashboard`} component={Dashboard} />*/}
-              {/*<Route path={`${process.env.PUBLIC_URL}/Pages/ValjTag`} component={ValjTag} />*/}
-              {/*<Route path={`${process.env.PUBLIC_URL}/Pages/SokTag`} component={SokTag} />*/}
-              {/*<Route path={`${process.env.PUBLIC_URL}/Pages/PlatsTid`} component={PlatsTid} />*/}
-              {/*<Route path={`${process.env.PUBLIC_URL}/Pages/Handel`} component={Handel} />*/}
-              {/*<Route path={`${process.env.PUBLIC_URL}/Pages/Varningar`} component={Varningar} />*/}
               <Route exact path="/" component={Home} />
               <Route path="/Pages/Dashboard" component={Dashboard} />
               <Route path="/Pages/SignUp" component={SignUp} />
